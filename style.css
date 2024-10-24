@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Spicy+Rice&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --fonte-destaque: "Arima", system-ui; 
+    --fonte-texto: "Spicy Rice", serif; 
+    --cor1: #fdc5f5ff;
+    --cor2: #f7aef8ff;
+    --cor3: #b388ebff;
+    --cor4: #8093f1ff;
+    --cor5: #72ddf7ff;
+}
+
+body{
+    background-color: var(--cor5);
+    font-family: var(--fonte-texto);
+}
+
+footer{
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--cor3);
+    padding: 1em;
+}
+
+footer p{
+    font-size: 1,2rem;
+    color: var(--cor1)
+}
