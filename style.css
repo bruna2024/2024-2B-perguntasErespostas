@@ -33,3 +33,75 @@ footer p{
     font-size: 1,2rem;
     color: var(--cor1)
 }
+
+footer a{
+    color: var(--cor2);
+    text-decoration: none;
+}
+
+#caixa{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 4rem;
+    gap: 2rem;
+}
+
+.cartao{
+    margin: 1rem;
+    background-color: var(--cor1);
+    height: 20rem;
+    flex-grow: 1;
+    flex-basis: calc(33% - 6rem);
+}
+
+.cartao__conteudo{
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    transform-style: preserve-3d;
+    transition: transform 300ms ease-in-out;
+}
+
+.cartao:hover .cartao__conteudo{
+    transform: rotateY(180deg);
+}
+
+.cartao__conteudo h3{
+    border: 2px, solid var(--cor3);
+    color: var(var(--cor4));
+    font-family: var(--fonte-titulo);
+    text-align: center;
+    padding: 0.5em;
+    position: absolute;
+    margin: 0.6em;
+    border-radius: 0.6em;
+    font-size: 1.5vw;
+    backface-visibility: hidden; 
+}
+
+.cartao__conteudo__pergunta{
+    font-size: 1.5rem;
+    margin: 2.5rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.cartao__conteudo__pergunta,
+.cartao__conteudo__resposta{
+    backface-visibility: hidden;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.cartao__conteudo p{
+    margin: 1rem;
+    padding: 1.3rem;
+}
+
+.cartao__conteudo__resposta{
+    font-size: 1.5rem;
+    transform: rotateY(180deg);
+}
+
