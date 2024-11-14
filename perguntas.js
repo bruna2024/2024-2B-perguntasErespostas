@@ -1,6 +1,6 @@
 criaCartao (
     "História",
-    "Por até quanto tempo durou a primeira revolução industrial?",
+    "Quanto tempo durou a primeira revolução industrial?",
     "Por volta de 1760 até 1850"
 )
 criaCartao(
